@@ -1,0 +1,17 @@
+//colors
+$white: #f6f6f6;
+$blue: #33c1e3;
+$black: #414141;
+$gray: #727272;
+$red: #e85f61;
+
+// layout
+//@import "_misc/normalize";
+@import "_misc/adjustment";
+
+// styles
+@import "sections/footer.scss";
+@import "sections/header.scss";
+@import "sections/sidebar.scss";
+@import "sections/portfolio.scss";
+@import "sections/about.scss";

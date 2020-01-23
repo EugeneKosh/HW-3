@@ -1,0 +1,84 @@
+.header {
+  height: 79px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 1px 3px 0 rgba(#000, .2);
+  margin-bottom: 3px;
+}
+.header__left {
+  display: block;
+  width: 50%;
+}
+.contacts{
+  padding-top: 25px;
+  color: $blue;
+  position: relative;
+}
+.contacts__short{
+  border-bottom: 2px $blue dotted;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contacts-all{
+  top: 50px;
+  left: -40px;
+  width: 191px;
+  height: 141px;
+  position: absolute;
+  background-image: url(../../img/header-pic/polygon.png);
+  display: none;
+  transition: all .50s;
+}
+.contacts:hover .contacts__short{
+  color: $red;
+  border-bottom: 2px $red dotted;
+}
+.contacts:hover .contacts-all{
+  display: block;
+}
+.contacts-all__list{
+  color: $gray;
+  margin: 10px 0 30px;
+
+}
+.contacts-all__inform{
+  height: 42px;
+}
+.only-border{
+  border-top: 1px solid $gray;
+}
+.listing{
+  padding-top: 12px;
+  padding-left: 12px;
+}
+.user{
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.user__avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid $white;
+  vertical-align: middle;
+  margin-top: 9px;
+}
+.user__avatar-pic{
+  display: block;
+}
+.user__name{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 30px;
+}
+
+
+

@@ -1,0 +1,35 @@
+.about-me__sectoin{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.about-me__pic{
+  width: 45%;
+  height: 235px;
+  margin: 0 20px;
+}
+
+.about-me__photo{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(246, 246, 246);
+  width: 224px;
+  height: 224px;
+  overflow: hidden;
+  margin: 0 35px;
+}
+
+.about-me__info{
+  width: 55%;
+}
+
+.about-me__tittle{
+  font-size: 35px;
+  font-weight: 500;
+  color: $black;
+}
+
