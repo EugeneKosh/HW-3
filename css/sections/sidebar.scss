@@ -34,35 +34,39 @@
 .sidebar__pic-text{
 }
 .sidebar__pic{
+  display: none;
 }
-.sidebar__link:hover .sidebar__pic{
-  opacity: 0;
+.sidebar__active-item{
+  .sidebar__pic-about{background: none;}
+  .sidebar__pic-career{background: none;}
+  .sidebar__pic-portfolio{background: none;}
+  .sidebar__pic{
+    display: block;
+  }
 }
-
-.sidebar__pic-about{
-  background-image: url(../../img/sidebar-pic/about-hover.png);
+.sidebar__link:hover{
+  .sidebar__pic-about{background: none;}
+  .sidebar__pic-career{background: none;}
+  .sidebar__pic-portfolio{background: none;}
+  .sidebar__pic{
+    display: block;
+  }
+}
+  
+.sidebar__pic-about, .sidebar__pic-career, .sidebar__pic-portfolio{
   background-repeat: no-repeat;
   background-size: 100%;
   height: 18px;
   width: 16px;
   float: left;
   margin-right: 9px;
+}
+.sidebar__pic-about{
+  background-image: url(../../img/sidebar-pic/about.png);
 }
 .sidebar__pic-career{
-  background-image: url(../../img/sidebar-pic/career-hover.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 18px;
-  width: 16px;
-  float: left;
-  margin-right: 9px;
+  background-image: url(../../img/sidebar-pic/career.png);
 }
 .sidebar__pic-portfolio{
-  background-image: url(../../img/sidebar-pic/portfolio-hover.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 18px;
-  width: 18px;
-  float: left;
-  margin-right: 9px;
+  background-image: url(../../img/sidebar-pic/portfolio.png);
 }
